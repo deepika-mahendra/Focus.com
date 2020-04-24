@@ -167,6 +167,7 @@ h2{
     height: 90%;
     padding: 13px;
     margin: 31px;
+    
 
 }
 .owl-caro-style{
@@ -174,7 +175,7 @@ h2{
     height: 90%;
     padding: 13px;
     margin: 31px;
-
+    margin-left: 16%;
 }
 .owl-caro-style:hover{
 	width: 80%!important;
@@ -276,7 +277,4 @@ height:
 	color:grey;
 	font-size: 12px;
 	font-family: raleway;
-}
-.p{
-	    margin-bottom: 0rem!important;
 }
