@@ -2,7 +2,17 @@
 	background-color: rgba(0,0,0,0.5);
 /*	position: fixed;*/
 }
-
+  
+.bg-dark{
+  background: rgba(0,0,0,0.5)!important;
+}  
+.bg-dark.scrolled{
+  background: #000!important;
+  transition: 0.75 ease;
+}	
+.nav-link{
+	color:white!important	;
+}
 .logo{
 	height: 40px;
 	width: 78px;
@@ -17,6 +27,9 @@
 .bgimg1{
 	background-image: url('../images/Banner_landing_craft_vintage_desktop.jfif');
 	height: 490px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
 	
 }
 .bgimg3{
@@ -97,7 +110,7 @@ h2{
     height:     100%
     width: 100%;
     padding: 1%;
-    margin-top: 5%;
+    margin-top: 12%;
 
 }
 @media only screen and (max-width: 700px) {
@@ -122,12 +135,17 @@ h2{
     margin-right: 12px!important;
     width: auto!important;
 }
-
+.everyone {
+    margin-top: 39%;
+    margin-bottom: 22%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
 
 }
 .green-batch{
-  background-color: #923840;
-    padding: 1%;
+  background-color: green;
+    padding: 3px;
     border-radius: 10%;
    
 }
@@ -249,4 +267,16 @@ height:
 }
 .navbar-transparent {
     background-color: transparent;
+}
+	
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5)!importants;
+}
+.span{
+	color:grey;
+	font-size: 12px;
+	font-family: raleway;
+}
+.p{
+	    margin-bottom: 0rem!important;
 }
