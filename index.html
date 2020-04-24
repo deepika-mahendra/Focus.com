@@ -25,14 +25,17 @@
 </head>
 
 <body>
-   <div class="bgimg1">   
+   
+       
+  <div class="bgimg1"> 
+
+
 	<nav class="navbar navbar-expand-md navbar-expand-lg bg-dark fixed-top   ">
     <div class="container-fluid">
 		<a href="#" class="navbar-brand logo-style"><img src="images/owl-eyes.png" class="logo"><span> Focus</span></a>
 
-		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
-      <span class="navbar-toggler-icon"> </span>
-    </button>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid" aria-controls="navbarid" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon" > </span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarid">
 		<ul class="navbar-nav  ml-auto">
@@ -55,8 +58,8 @@
 				<a href="#aboutpg" class="nav-link">about</a>
 			</li>
 
-      <li class="nav-item">
-          <div class="container">
+			   <li class="nav-item">
+          <div class="container"  style="padding-left: 0px; margin-top: 3%" >
       <button class="btn btn-style" data-target="#mymodel" data-toggle="modal">Login</button>
       <div class="modal" id="mymodel">
         <div class="modal-dialog modal-dialog-centered">
@@ -84,36 +87,42 @@
       </div>
     </div>
     </li>
+		<li class="nav-item">
+					<div class="container" style="padding-left: 0px; margin-top: 3%">
+			<button class="btn btn-style" data-target="#mymodal" data-toggle="modal">Sign Up</button>
+			<div class="modal" id="mymodal">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 style="color: #5a191f;">Create a new account</h3>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<form> 
+								<div class="form-group">
+									<label><i class="fas fa-user"></i> User Name:</label>
+									<input type="text" name="" class="form-control">
+									<label><i class="fas fa-envelope"></i> Email:</label>
+									<input type="text" name="" class="form-control">
+									<label><i class="fas fa-key"></i> Create Password:</label>
+									<input type="text" name="" class="form-control">
+									
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button class=" btn-style" data-dismiss="modal">sign up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</li>
     <li class="nav-item">
-          <div class="container">
-      <button class="btn btn-style" data-target="#mymodal" data-toggle="modal">Sign Up</button>
-      <div class="modal" id="mymodal">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 style="color: #5a191f;">Create a new account</h3>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-              <form> 
-                <div class="form-group">
-                  <label><i class="fas fa-user"></i> User Name:</label>
-                  <input type="text" name="" class="form-control">
-                  <label><i class="fas fa-envelope"></i> Email:</label>
-                  <input type="text" name="" class="form-control">
-                  <label><i class="fas fa-key"></i> Create Password:</label>
-                  <input type="text" name="" class="form-control">
-                  
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button class=" btn-style" data-dismiss="modal">sign up</button>
-            </div>
-          </div>
-        </div>
+      <div class="container-fluid" style="  font-size: 23px;padding: 0px;">
+      <span style="color:grey;"><i class="fas fa-cart-arrow-down" style="color:white;"></i>(0)</span>
+       <span style="color:grey;"><i class="fas fa-heart" style="color:white;"></i>(0)</span>
       </div>
-    </div>
     </li>
 		</ul>
 </div>
@@ -134,7 +143,7 @@
 		<button class="btn-style">know more about us</button><br>   
 	</div>
   </div>
-</div>
+  </div>
 
  
 <div class="row" style="margin: 0px;">
@@ -164,8 +173,6 @@
   </div>
   </div>
 </div>
-
-
 <div class="container-fluid" style="border-bottom: double;padding-bottom: 19px;border-color: #a95e5e;"><br>
 	<h2 class="text-center">ONLINE EXCLUSIVE EYEGLASSES @ RS.499</h2>
 	<p class="text-center">Best in Class material | Limited Period Offer | 1 Year Warranty</p><br>
