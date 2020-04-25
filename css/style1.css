@@ -103,9 +103,9 @@ h3{
     margin-bottom: -26px;
 
 }
-h2{
-	      font-family: Work;
-    font-weight: 600;
+h1,h2,h3,h4,h5,h6{
+	font-family: raleway;
+	 font-weight: bold;
 }
 .everyone{
     background-color: rgba(208, 203, 203, 0.7);
@@ -145,8 +145,15 @@ h2{
     margin-left: 3%;
     margin-right: 3%;
 }
+.nav-top-margin{
+  margin-top: 18%;
+}
 
 }
+.nav-top-margin{
+  margin-top: 4%;
+}
+
 .green-batch{
   background-color: green;
     padding: 3px;
@@ -305,4 +312,16 @@ height:
 	color:grey;
 	font-size: 12px;
 	font-family: raleway;
+}
+.goToTop{
+	    color: #979797;
+    cursor: pointer;
+    height: 44px;
+    position: fixed;
+    right: 14px;
+    text-align: center;
+    width: 44px;
+    z-index: 9;
+    display: block;
+    padding: 8px 0;
 }
