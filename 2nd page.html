@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
 
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="C:\Users\ASUS\Desktop\website\fontawesome-free-5.13.0-web\fontawesome-free-5.13.0-web\css\all.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 
@@ -22,12 +22,12 @@
 <body>
 		  <div class="container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
 	
-	<nav class="navbar  navbar-expand-md navbar-expand-lg bg-dark navbar-fixed-top fixed-top " style="background: black;">
+	<nav class="navbar  navbar-expand-md navbar-expand-lg bg-dark navbar-fixed-top fixed-top " style="background: black!important;">
     <div class="container-fluid">
-		<a href="#" class="navbar-brand logo-style"><img src="images/owl-eyes.png" class="logo"><span> Focus</span></a>
+		<span class="navbar-brand logo-style"><img src="images/owl-eyes.png" class="logo"><span> Focus</span></span>
 
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid" aria-controls="navbarid" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon" > </span>
+				<span class="navbar-toggler-icon" ><i class="fa fa-bars" style="color: white;margin-top: 15%;"></i> </span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarid">
 		<ul class="navbar-nav  ml-auto">
@@ -81,7 +81,7 @@
     </li>
 		<li class="nav-item">
 					<div class="container" style="padding-left: 0px; margin-top: 3%">
-			<button class="btn btn-style" data-target="#mymodal" data-toggle="modal">Sign Up</button>
+			<button class="btn btn-style" data-target="#mymodal" onclick="validation();" data-toggle="modal">Sign Up</button>
 			<div class="modal" id="mymodal">
 				<div class="modal-dialog modal-dialog-centered">
 					<div class="modal-content">
@@ -103,7 +103,7 @@
 							</form>
 						</div>
 						<div class="modal-footer">
-							<button class=" btn-style" data-dismiss="modal">sign up</button>
+							<button class=" btn-style" data-dismiss="modal" onclick="register()" >sign up</button>
 						</div>
 					</div>
 				</div>
@@ -127,10 +127,6 @@
 
 
 
-
-
-
-
 <div class="container-fluid">
 	<div class="row nav-top-margin">
 		<div class="col-lg-5 col-xs-12 ">
@@ -139,11 +135,12 @@
 					<div class="owl-carousel owl-theme text-center">
         
     <a href="#"><div class="item"><img class="img12 owl-caro-style2" src="images/round3.jpg" height="100" width="200" alt="banner-image"><h4></h4></div></a>
-    <a href="#"><div class="item"><img class="img12 owl-caro-style2" src="images/round2.jpg" height="100" width="200" alt="banner-image"><h4></h4></div></a>
-    <a href="#"><div class="item"><img class="img12 owl-caro-style2" src="images/round1.jpg" height="100" width="200" alt="banner-image"><h4></h4></div></a>
-	 <a href="#"><div class="item"><img class="img12 owl-caro-style2" src="images/roundfront.jpg" height="100" width="200" alt="banner-image"><h4></h4></div></a>    
+    <a href="#"><div class="item"><img class="img12 owl-caro-style2" src="images/round2.jpg" height="100" width="200" alt="banner-image"><h4></h4></div></a>	
+	 <a href="#"><div class="item"><img class="img12 owl-caro-style2" src="images/roundfront.jpg" height="100" width="200" alt="banner-image"><h4></h4></div></a>
+	 <a href="#"><div class="item"><img class="img12 owl-caro-style2" src="images/roundgirl.webp" height="100" width="200" alt="banner-image"><h4></h4></div></a>    
 </div>
-<span><button type="button" class="btn add-buy-style  btn-center text-center"><i class="fas fa-heart" style="color:white;"></i> Add to Cart </button> <button type="button" class="btn add-buy-style btn-center text-center"><i class="fas fa-cart-arrow-down" style="color:white;"></i> Buy Now</button></span>	
+<span><button type="button" class="btn add-buy-style  btn-center text-center" onclick="add_to_wishlist();"><i class="fas fa-heart" style="color:white;"></i> Add to Wishlist </button> 
+	<button type="button" class="btn add-buy-style btn-center text-center" onclick="add_to_cart();"><i class="fas fa-cart-arrow-down" style="color:white;"></i> Buy Now</button></span>	
 			</div>
 		</div>	
 			<div class="col-lg-7 col-xs-12">
@@ -262,7 +259,7 @@
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 	<script type="text/javascript">
 		$('.owl-carousel').owlCarousel({
     loop:true,
@@ -293,6 +290,50 @@
 });
 		})
 	</script>
+	  <script type="text/javascript">
+    function validation(){
+      var email;
+      var pass;
+      var email= document.getElementById('email').value;
+       var pass= document.getElementById('pass').value;
+if (email ==null && pass== null) {
+              Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong! try again',
 
+});
+
+    }
+    else{
+      Swal.fire({
+  title: 'login successfull',
+  text: 'Do you want to continue',
+  icon: 'success',
+  confirmButtonText: 'Cool'
+});
+    }
+    }
+  </script>
+  <script type="text/javascript">
+        function register(){
+       Swal.fire({
+  title: 'successfully registered',
+  text: 'Do you want to continue',
+  icon: 'success',
+  confirmButtonText: 'Cool'
+});
+        }
+    </script>
+<script type="text/javascript">
+	  function add_to_wishlist(){
+	alert(" successfully added to the Wishlist!!!")
+}
+</script>
+<script type="text/javascript">
+	  function add_to_cart(){
+	alert(" successfully added to the cart!!!")
+}
+</script>
 </body>
 </html>

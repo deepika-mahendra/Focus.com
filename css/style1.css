@@ -139,7 +139,7 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 12%;
 
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 	.everyone{
 		  height: auto;
 		  margin-top: 0%;
@@ -172,9 +172,12 @@ h1,h2,h3,h4,h5,h6{
 }
 
 }
-.nav-top-margin{
+@media only screen and (min-width: 650px){
+    .nav-top-margin{
   margin-top: 4%;
 }
+}
+
 
 .green-batch{
   background-color: green;
@@ -334,15 +337,11 @@ height:
 	font-size: 12px;
 	font-family: raleway;
 }
-.goToTop{
-	    color: #979797;
-    cursor: pointer;
-    height: 44px;
-    position: fixed;
-    right: 14px;
-    text-align: center;
-    width: 44px;
-    z-index: 9;
-    display: block;
-    padding: 8px 0;
+.card{
+        box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+.card:hover{
+    -webkit-box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
 }
