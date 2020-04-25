@@ -188,9 +188,7 @@ h1,h2,h3,h4,h5,h6{
     color: #fff;
     background-color: #5a191f;
     border-color: #42161a;
-  	
-    padding-left: 1%;
-    padding-right: 1%;
+ 
 }
 .btn-style:hover{
 	color: #c7c0c1;

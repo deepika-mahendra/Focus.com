@@ -18,6 +18,7 @@
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
 <style type="text/css">
 
 </style>
@@ -60,27 +61,27 @@
 
 			   <li class="nav-item">
           <div class="container"  style="padding-left: 0px; margin-top: 3%" >
-      <button class="btn btn-style" data-target="#mymodel" data-toggle="modal">Login</button>
+      <button class="btn btn-style" data-target="#mymodel"  data-toggle="modal">Login</button>
       <div class="modal" id="mymodel">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h3 style="color: #5a191f;">login</h3>
+              <h3 style="color: #5a191f;" >login</h3>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
               <form>
-                <div class="form-group">
+                <div class="form-group"> 
                   <label><i class="fas fa-envelope"></i> Email:</label>
-                  <input type="text" name="" class="form-control">
-                  <label> <i class="fas fa-key"></i> Password:</label>
-                  <input type="text" name="" class="form-control">
+                  <input type="text" id="email" name="" class="form-control">
+                  <label> <i class="fas fa-key"></i> Password:</label>  
+                  <input type="text" name="" id="pass" class="form-control">
                   
                 </div>
               </form>
             </div>
             <div class="modal-footer">
-              <button class=" btn-style" data-dismiss="modal">sign in</button>
+              <button class=" btn-style" data-dismiss="modal" onclick="validation();">sign in</button>
             </div>
           </div>
         </div>
@@ -111,7 +112,7 @@
 							</form>
 						</div>
 						<div class="modal-footer">
-							<button class=" btn-style" data-dismiss="modal">sign up</button>
+							<button class=" btn-style" onclick="register()" data-dismiss="modal">sign up</button>
 						</div>
 					</div>
 				</div>
@@ -249,7 +250,7 @@
           <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
             <div class="card card-style animated zoomIn ">
             	<a href="#sunglasses">
-              <img class="card-img-top card-img-style card-hover" src="images/sunglass.jpg"  alt="Card image" >
+              <img class="card-img-top card-img-style card-hover" src="images/sunglasses.jpg"  alt="Card image" >
               <div class="card-body">
                 <h4 class="card-i card-text-style">Sunglasses</h4>
               </div></a>
@@ -454,6 +455,7 @@
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 	<script type="text/javascript">
 		$('.owl-carousel').owlCarousel({
@@ -502,6 +504,40 @@
         });
 
 </script>
+  <script type="text/javascript">
+    function validation(){
+      var email;
+      var pass;
+      var email= document.getElementById('email').value;
+       var pass= document.getElementById('pass').value;
+if (email ==null && pass== null) {
+              Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong! try again',
+
+});
+
+    }
+    else{
+      Swal.fire({
+  title: 'login successfull',
+  text: 'Do you want to continue',
+  icon: 'success',
+  confirmButtonText: 'Cool'
+});
+    }
+    }
+  </script>
+  <script type="text/javascript">
+        function register(){
+       Swal.fire({
+  title: 'successfully registered',
+  text: 'Do you want to continue',
+  icon: 'success',
+  confirmButtonText: 'Cool'
+});
+        }
   </script>
 </body>
 </html>
