@@ -196,19 +196,7 @@ h1,h2,h3,h4,h5,h6{
 .btn-style:hover{
 	color: #c7c0c1;
 }
-/*.main-btn {
-    display: inline-block;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    position: relative;
-    font-size: 14px;
-    word-spacing: 2px;
-    font-weight: 500;
-    transform: perspective(1px)translateX(0px);
-    transition: all 0.2s ease 0s;
-    overflow: hidden;
-}*/
+
 .add-buy-style {
     width: 45%;
     padding: 3%;
